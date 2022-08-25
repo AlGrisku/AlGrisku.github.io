@@ -1,0 +1,48 @@
+:root
+{
+    --darkGray: #474554;
+    --lightGray: #ACA9BB;
+    --gray: #787586;
+    --darkBlue: #282637;
+    --white: #F2F2F2;
+    --blue: #48D4CB;
+    --ctaColor: #8685EF;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1, h2, h3, span
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p
+{
+    font-family: 'Libre Caslon Text', serif;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: auto;
+}
