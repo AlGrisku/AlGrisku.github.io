@@ -1,0 +1,169 @@
+@import "general.css";
+
+#problem .problem
+{
+    background-color: var(--lightGray);
+    position: relative;
+    min-height: 100vh;
+}
+
+#problem .content-wrapper
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 80%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+#problem .content-wrapper .img-container
+{
+    width: 200px;
+    height: 250px;
+}
+
+#problem .content-wrapper .text-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+#problem .text-container h1
+{
+    font-size: 2rem;
+    color: var(--darkBlue);
+}
+
+#problem .text-container p
+{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: var(--black);
+}
+
+#problem .text-container ul
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+#problem #deco
+{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 25vh;
+    background-color: var(--blueTransparent);
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (min-width: 768px)
+{
+
+    #problem .content-wrapper
+    {
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        column-gap: 50px;
+    }
+
+    #problem .content-wrapper .img-container
+    {
+        width: 240px;
+        height: 400px;
+    }
+
+    #problem .content-wrapper .text-container
+    {
+        width: 60%;
+        row-gap: 30px;
+    }
+
+    #problem .text-container h1
+    {
+        font-size: 2.5rem;
+    }
+
+    #problem .text-container p
+    {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+
+    #problem .text-container ul
+    {
+        font-size: 1.7rem;
+        row-gap: 20px;
+    }
+
+    #problem #deco
+    {
+        width: 68%;
+        height: 100vh;
+        left: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px)
+{
+
+    #problem .content-wrapper
+    {
+        column-gap: 90px;
+        justify-content: center;
+        transform: translateX(-10%);
+    }
+
+    #problem .content-wrapper .img-container
+    {
+        width: 300px;
+        height: 450px;
+    }
+
+    #problem .content-wrapper .text-container
+    {
+        width: 40%;
+        row-gap: 30px;
+        align-items: flex-start;
+    }
+
+    #problem .text-container h1
+    {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #problem .text-container p
+    {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+
+    #problem .text-container ul
+    {
+        font-size: 1.3rem;
+        row-gap: 20px;
+        transform: translateX(20px);
+        line-height: 2.3rem;
+    }
+
+    #problem #deco
+    {
+        width: 50%;
+        left: 25%;
+    }
+
+}

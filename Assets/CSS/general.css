@@ -7,6 +7,8 @@
     --white: #F2F2F2;
     --blue: #48D4CB;
     --ctaColor: #8685EF;
+    --blueTransparent: rgb(72, 212, 203, .7);
+    --black: #000;
 }
 
 *
@@ -33,7 +35,7 @@ h1, h2, h3, span
     font-family: 'Josefin Sans', sans-serif;
 }
 
-p
+p, ul, a
 {
     font-family: 'Libre Caslon Text', serif;
 }
