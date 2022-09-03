@@ -1,0 +1,143 @@
+@import "general.css";
+
+#skills .skills
+{
+    background-color: var(--darkBlue);
+    min-height: 100vh;
+}
+
+#skills .content-wrapper
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 85%;
+    min-height: 100vh;
+}
+
+#skills .header h2
+{
+    font-size: 2rem;
+    color: var(--blue);
+    position: relative;
+}
+#skills .header h2::before
+{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: var(--blue);
+    left: -10px;
+    bottom: -5px;
+}
+
+#skills .tech-skill
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+#skills .tech-skill .icon-wrapper
+{
+    width: 45%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 4px var(--black);
+}
+
+#skills .tech-skill .icon-wrapper img
+{
+    width: 80px;
+    height: 80px;
+}
+
+#skills .tech-skill .icon-wrapper p
+{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px)
+{
+
+    #skills .header h2
+    {
+        font-size: 2.5rem;
+    }
+
+    #skills .tech-skill
+    {
+        column-gap: 50px;
+    }
+
+    #skills .tech-skill .icon-wrapper
+    {
+        width: 45%;
+        height: 23vh;
+        row-gap: 30px;
+    }
+
+    #skills .tech-skill .icon-wrapper img
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+    #skills .tech-skill .icon-wrapper p
+    {
+        color: var(--white);
+        font-size: 1.7rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px)
+{
+
+    #skills .header h2
+    {
+        transform: translateX(5%);
+    }
+    #skills .header h2::before
+    {
+        border-width: 0 0 3px 3px;
+    }
+
+    #skills .content-wrapper
+    {
+        width: 80%;
+    }
+
+    #skills .tech-skill
+    {
+        width: 100%;
+        column-gap: 80px;
+    }
+
+    #skills .tech-skill .icon-wrapper
+    {
+        width: 23%;
+        height: 30vh;
+        row-gap: 20px;
+    }
+
+    #skills .tech-skill .icon-wrapper img
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+}
