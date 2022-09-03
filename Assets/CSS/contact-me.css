@@ -1,0 +1,177 @@
+@import "general.css";
+
+#contact-me .contact-me
+{
+    min-height: 100vh;
+    background-color: var(--gray);
+    position: relative;
+}
+#contact-me .contact-me::before
+{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 50vh;
+    background-color: var(--white);
+    top: 5%;
+    z-index: 1;
+}
+#contact-me .contact-me::after
+{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 55vh;
+    bottom: 0;
+    right: 0;
+    background-color: var(--blueTransparent);
+}
+
+#contact-me .content-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 85%;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    z-index: 10;
+}
+
+#contact-me .left-section
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+#contact-me .left-section h1
+{
+    font-size: 2rem;
+}
+
+#contact-me .left-section p
+{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+#contact-me .right-section
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-me .img-container
+{
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (min-width: 768px)
+{
+
+    #contact-me .contact-me::before
+    {
+        top: 10%;
+    }
+    #contact-me .contact-me::after
+    {
+        right: 35%;
+        width: 30%;
+        height: 100vh;
+    }
+
+    #contact-me .content-wrapper
+    {
+        width: 90%;
+        flex-direction: column;
+        row-gap: 0;
+        align-items: flex-start;
+    }
+
+    #contact-me .left-section
+    {
+        width: 70%;
+    }
+
+    #contact-me .left-section h1
+    {
+        font-size: 2.7rem;
+    }
+
+    #contact-me .left-section p
+    {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+
+    #contact-me .right-section
+    {
+        width: 100%;
+        justify-content: flex-end;
+        transform: translateY(-10%);
+    }
+
+    #contact-me .img-container
+    {
+        width: 400px;
+        height: 400px; 
+    }
+
+}
+
+@media only screen and (min-width: 1200px)
+{
+
+    #contact-me .contact-me::before
+    {
+        top: 10%;
+        left: 0;
+        height: 80%;
+        width: 70%;
+    }
+    #contact-me .contact-me::after
+    {
+        right: 25%;
+        width: 10%;
+        height: 100vh;
+    }
+
+    #contact-me .content-wrapper
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #contact-me .left-section
+    {
+        width: 50%;
+        row-gap: 50px;
+    }
+
+    #contact-me .right-section
+    {
+        width: 40%;
+        transform: translateY(0);
+    }
+
+    #contact-me .img-container
+    {
+        width: 500px;
+        height: 500px; 
+    }
+
+    #contact-me .cta
+    {
+        width: 35%;
+    }
+
+}

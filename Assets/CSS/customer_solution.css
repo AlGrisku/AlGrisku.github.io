@@ -82,18 +82,6 @@
     color: var(--black);
 }
 
-#solution .lower-section .text-container a
-{
-    display: block;
-    background-color: var(--ctaColor);
-    width: 60%;
-    text-align: center;
-    padding: 20px 0;
-    color: var(--white);
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-}
-
 #solution .lower-section .img-container
 {
     width: 200px;
@@ -146,12 +134,6 @@
     }
 
     #solution .lower-section .text-container p
-    {
-        font-size: 1.7rem;
-        line-height: 2.3rem;
-    }
-
-    #solution .lower-section .text-container a
     {
         font-size: 1.7rem;
         line-height: 2.3rem;
@@ -214,14 +196,6 @@
         font-size: 1.3rem;
         line-height: 2.3rem;
         width: 90%;
-    }
-
-    #solution .lower-section .text-container a
-    {
-        font-size: 1.3rem;
-        line-height: 2.3rem;
-        width: 30%;
-        padding: 10px 0;
     }
 
 }

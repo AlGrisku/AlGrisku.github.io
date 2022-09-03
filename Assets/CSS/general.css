@@ -41,6 +41,18 @@ p, ul, a
     font-family: 'Libre Caslon Text', serif;
 }
 
+.cta
+{
+    display: block;
+    background-color: var(--ctaColor);
+    width: 60%;
+    text-align: center;
+    padding: 20px 0;
+    color: var(--white);
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
 .container
 {
     display: flex;
@@ -48,4 +60,26 @@ p, ul, a
     justify-content: center;
     max-width: 100%;
     min-height: auto;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .cta
+    {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+
+    .cta
+    {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        width: 30%;
+        padding: 10px 0;
+    }
+
 }

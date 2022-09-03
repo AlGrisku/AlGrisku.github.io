@@ -55,7 +55,7 @@
     flex-direction: column;
     row-gap: 10px;
     border-radius: 20px;
-    box-shadow: 0 0 15px 4px var(--black);
+    box-shadow: 0 0 10px 2px var(--black);
 }
 
 #skills .tech-skill .icon-wrapper img
